@@ -1,0 +1,39 @@
+This Python script demonstrates how to integrate Azure OpenAI with Azure Cognitive Search using the Azure OpenAI Python SDK. The script performs the following tasks:
+
+Environment Setup:
+Loads environment variables from a .env file using dotenv.
+Retrieves configuration settings such as Azure OpenAI endpoint, API key, deployment name, and Azure Cognitive Search details.
+Client Initialization:
+Initializes the Azure OpenAI client with the provided configuration settings.
+User Input:
+Prompts the user to enter a question or text input.
+Data Source Configuration:
+Configures the data source for Azure Cognitive Search.
+Request to Azure OpenAI:
+Sends the user’s input as a request to the Azure OpenAI model.
+Prints the request being sent for transparency.
+Response Handling:
+Processes the response from the Azure OpenAI model.
+Prerequisites
+Python 3.6 or higher
+dotenv library for loading environment variables
+Azure OpenAI and Azure Cognitive Search services set up in your Azure account
+How to Run
+Clone the repository.
+Create a .env file in the root directory with the following variables:
+AZURE_OAI_ENDPOINT=<your_azure_openai_endpoint>
+AZURE_OAI_KEY=<your_azure_openai_key>
+AZURE_OAI_DEPLOYMENT=<your_azure_openai_deployment>
+AZURE_SEARCH_ENDPOINT=<your_azure_search_endpoint>
+AZURE_SEARCH_KEY=<your_azure_search_key>
+AZURE_SEARCH_INDEX=<your_azure_search_index>
+
+Install the required libraries:
+pip install python-dotenv openai
+
+Run the script:
+python script_name.py
+
+Notes
+Ensure your Azure OpenAI and Azure Cognitive Search services are correctly configured and the API keys are valid.
+The script currently sets a flag show_citations to False. Modify this as needed for your use case.
